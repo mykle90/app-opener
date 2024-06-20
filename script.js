@@ -5,7 +5,7 @@ openAppButton.addEventListener('click', () => {
 
   // Check for iOS devices
   if (/iPad|iPhone|iPod/.test(userAgent)) {
-    const appStoreLink = 'your_ios_app_store_link'; // Replace with your actual App Store link
+    const appStoreLink = 'https://apps.apple.com/no/app/thon-hotels/id1308171406'; // Replace with your actual App Store link
 
     // Try opening the app using the custom URL scheme
     const openAppUrl = 'thonhotels://'; 
@@ -16,7 +16,7 @@ openAppButton.addEventListener('click', () => {
       window.location.href = appStoreLink;
     }
   } else if (/android/i.test(userAgent)) {
-    const playStoreLink = 'your_android_play_store_link'; // Replace with your actual Play Store link
+    const playStoreLink = 'https://play.google.com/store/apps/details?id=otg.thonhotel&hl=en'; // Replace with your actual Play Store link
 
     // Try opening the app using the custom URL scheme
     const openAppUrl = 'intent://thonhotels/#Intent;scheme=thonhotels;package=com.yourapppackage;end;'; 
